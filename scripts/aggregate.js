@@ -1,12 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const santanderOptions = {
-  server: 'http://172.16.2.141',
-  port: '55555',
-  project: 'santander-customer-satisfaction'
-};
-
 const rossmanOptions = {
   server: 'http://172.16.2.27',
   port: '54321',
