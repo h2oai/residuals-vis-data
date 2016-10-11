@@ -3,23 +3,11 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const grupoBimboWeekSplitOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  validationFrame: 'validation.hex',
-  modelIDs: [
-    'glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae',
-    'drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0',
-    'gbm-a6210942-fe85-4709-b513-576351f70400'
-  ]
-};
-
 const grupoBimboDmitryFeaturesOptions = {
   server: 'http://172.16.2.141',
   port: '54321',
   validationFrame: 'Bimbo_valid_processed1.hex',
   modelIDs: [
-    'gbm-3aaad580-3abc-4876-b4dc-4730b11d2388',
     'drf-c70bb027-a911-4f67-a754-bb25c31f7ae8',
     'gbm-6453814e-3bfb-4764-b409-b29787447183',
     'glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5',

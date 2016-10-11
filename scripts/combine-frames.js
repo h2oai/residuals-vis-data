@@ -1,27 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const grupoBimboWeekSplitOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  modelIDs: [
-    'glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae',
-    'drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0',
-    'gbm-a6210942-fe85-4709-b513-576351f70400'
-  ],
-  validationFrame: 'validation.hex',
-  predictionFrames: {
-    'glm': 'predictions_8564_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex',
-    'drf': 'predictions_9b49_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex',
-    'gbm': 'predictions_8182_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex'
-  },
-  deviancesFrames: {
-    'glm': 'deviances_b3a1_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex',
-    'drf': 'deviances_aebb_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex',
-    'gbm': 'deviances_ba64_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex'
-  }
-};
-
 const grupoBimboDmitryFeaturesOptions = {
   server: 'http://172.16.2.141',
   port: '54321',

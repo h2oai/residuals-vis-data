@@ -1,17 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const grupoBimboWeekSplitOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  combinedFrames: {
-    'glm': 'combined-combined-validation.hex-predictions_8564_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex-deviances_b3a1_glm-d7208b6f-ae13-4996-8c10-6be359f3e2ae_on_validation.hex',
-    'drf': 'combined-combined-validation.hex-predictions_9b49_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex-deviances_aebb_drf-b08c3eed-0806-4e41-b8f2-4b1d18812af0_on_validation.hex',
-    'gbm': 'combined-combined-validation.hex-predictions_8182_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex-deviances_ba64_gbm-a6210942-fe85-4709-b513-576351f70400_on_validation.hex'
-  },
-  ignoredColumns:'["Agencia_ID","Producto_ID","Cliente_ID","Semana","Canal_ID","Ruta_SAK","Venta_uni_hoy","Venta_hoy","Dev_uni_proxima","Dev_proxima","Demanda_uni_equil","NombreCliente","NombreProducto","Town","State","Demanda_uni_equil0"]'
-}
-
 const grupoBimboDmitryFeaturesOptions = {
   server: 'http://172.16.2.141',
   port: '54321',
