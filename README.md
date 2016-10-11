@@ -1,4 +1,9 @@
-# residuals/data
+# residuals-vis-data
+
+see also 
+- the [residuals-vis](https://github.com/h2oai/residuals-vis) React component that draws the visualization
+- the [residuals-vis-example-project](https://github.com/h2oai/residuals-vis-example-project) React app that consumes the React component
+  and uses it with data from h2o-3
 
 to create aggreated data frames suitable for visualization:
 
