@@ -1,36 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const rossmanOptions = {
-  server: 'http://172.16.2.27',
-  port: '54321',
-  modelIDs: [
-    'deeplearning-a2a9fef1-10d0-4cfb-a8dd-96e99dca161c'
-  ],
-  project: 'rossman-store-sales'
-};
-
-const grupoBimboNaiveOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  modelIDs: [
-    'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3',
-    'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25',
-    'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
-  ],
-  validationFrame: 'gb_validation_frame_0.250',
-  predictionFrames: {
-    'glm': 'predictions_bca0_glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3_on_gb_validation_frame_0.250',
-    'drf': 'predictions_a25c_drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25_on_gb_validation_frame_0.250',
-    'gbm': 'predictions_9f6b_gbm-ef176351-e583-4484-9a08-0f47dc10d4e1_on_gb_validation_frame_0.250'
-  },
-  deviancesFrames: {
-    'glm': 'deviances_a106_glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3_on_gb_validation_frame_0.250',
-    'drf': 'deviances_b0f4_drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25_on_gb_validation_frame_0.250',
-    'gbm': 'deviances_8134_gbm-ef176351-e583-4484-9a08-0f47dc10d4e1_on_gb_validation_frame_0.250'
-  }
-};
-
 const grupoBimboWeekSplitOptions = {
   server: 'http://172.16.2.141',
   port: '54321',

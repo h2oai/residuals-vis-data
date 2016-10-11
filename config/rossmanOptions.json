@@ -1,0 +1,8 @@
+{
+  "server": "http://172.16.2.27",
+  "port": "54321",
+  "modelIDs": [
+    "deeplearning-a2a9fef1-10d0-4cfb-a8dd-96e99dca161c"
+  ],
+  "project": "rossman-store-sales"
+}

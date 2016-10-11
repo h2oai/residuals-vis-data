@@ -3,27 +3,6 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const rossmanOptions = {
-  server: 'http://172.16.2.27',
-  port: '54321',
-  modelIDs: [
-    'deeplearning-a2a9fef1-10d0-4cfb-a8dd-96e99dca161c'
-  ],
-  project: 'rossman-store-sales'
-};
-
-const grupoBimboNaiveOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  validationFrame: 'gb_validation_frame_0.250',
-  modelIDs: [
-    'glm-f52fe8cb-3aad-4eb0-b0cb-36ec16ae58a3',
-    'drf-c6daf49d-dd1f-43b8-9eeb-99bb828d2a25',
-    'gbm-ef176351-e583-4484-9a08-0f47dc10d4e1',
-    'deeplearning-a9e4ccaf-8387-49fe-964e-6473284c67ff'
-  ]
-};
-
 const grupoBimboWeekSplitOptions = {
   server: 'http://172.16.2.141',
   port: '54321',

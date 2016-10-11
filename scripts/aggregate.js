@@ -1,23 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const rossmanOptions = {
-  server: 'http://172.16.2.27',
-  port: '54321',
-  project: 'rossman-store-sales'
-};
-
-const grupoBimboNaiveOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  combinedFrames: {
-    'glm': 'gb_glm_combined_validation_prediction_deviance.hex',
-    'drf': 'gb_drf_combined_validation_prediction_deviance.hex',
-    'gbm': 'gb_gbm_combined_validation_prediction_deviance.hex'
-  },
-  ignoredColumns:'["Agencia_ID","Producto_ID","Cliente_ID","Semana","Canal_ID","Ruta_SAK","Venta_uni_hoy","Venta_hoy","Dev_uni_proxima","Dev_proxima","Demanda_uni_equil","NombreCliente","NombreProducto","Town","State","Demanda_uni_equil0"]'
-}
-
 const grupoBimboWeekSplitOptions = {
   server: 'http://172.16.2.141',
   port: '54321',
