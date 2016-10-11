@@ -1,0 +1,23 @@
+{
+  "server": "http://172.16.2.141",
+  "port": "54321",
+  "validationFrame": "Bimbo_valid_processed1.hex",
+  "modelIDs": [
+    "gbm-3aaad580-3abc-4876-b4dc-4730b11d2388",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183",
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5"
+  ],
+  "predictionFrames": {
+    "gbm-3aaad580-3abc-4876-b4dc-4730b11d2388": "predictions_9bdb_gbm-3aaad580-3abc-4876-b4dc-4730b11d2388_on_Bimbo_valid_processed1.hex",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "predictions_80c6_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed1.hex",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": "predictions_8de7_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed1.hex",
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "predictions_839b_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed1.hex"
+  },
+  "deviancesFrames": {
+    "gbm-3aaad580-3abc-4876-b4dc-4730b11d2388": "deviances_8a33_gbm-3aaad580-3abc-4876-b4dc-4730b11d2388_on_Bimbo_valid_processed1.hex",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "deviances_866e_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed1.hex",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": "deviances_b64c_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed1.hex",
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "deviances_9c19_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed1.hex"
+  }
+}
