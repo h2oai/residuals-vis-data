@@ -1,27 +1,6 @@
 const fetch = require('node-fetch');
 const jsonfile = require('jsonfile');
 
-const grupoBimboDmitryFeaturesOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  validationFrame: 'Bimbo_valid_processed.hex',
-  modelIDs: [
-    'drf-460f78d7-e5e3-4ea7-8a08-b877de724119',
-    'gbm-9a8e7868-3689-4f51-bdc6-5ea068478094',
-    'glm-2e52c7c0-dd22-4e76-8372-c2cbb7dd0141'
-  ],
-  predictionFrames: {
-    'glm': 'predictions_b4e1_glm-2e52c7c0-dd22-4e76-8372-c2cbb7dd0141_on_Bimbo_valid_processed.hex',
-    'drf': 'predictions_99ce_drf-460f78d7-e5e3-4ea7-8a08-b877de724119_on_Bimbo_valid_processed.hex',
-    'gbm': 'predictions_9948_gbm-9a8e7868-3689-4f51-bdc6-5ea068478094_on_Bimbo_valid_processed.hex'
-  },
-  deviancesFrames: {
-    'glm': 'deviances_8f59_glm-2e52c7c0-dd22-4e76-8372-c2cbb7dd0141_on_Bimbo_valid_processed.hex',
-    'drf': 'deviances_86b2_drf-460f78d7-e5e3-4ea7-8a08-b877de724119_on_Bimbo_valid_processed.hex',
-    'gbm': 'deviances_8053_gbm-9a8e7868-3689-4f51-bdc6-5ea068478094_on_Bimbo_valid_processed.hex'
-  }
-};
-
 function combineFrames(options, ...args) {
   console.log('args', args);
   const frameIDs = args;

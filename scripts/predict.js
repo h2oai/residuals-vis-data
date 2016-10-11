@@ -3,17 +3,6 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const grupoBimboDmitryFeaturesOptions = {
-  server: 'http://172.16.2.141',
-  port: '54321',
-  validationFrame: 'Bimbo_valid_processed1.hex',
-  modelIDs: [
-    'drf-c70bb027-a911-4f67-a754-bb25c31f7ae8',
-    'gbm-6453814e-3bfb-4764-b409-b29787447183',
-    'glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5',
-  ]
-};
-
 const configFile = 'grupoBimboDmitryFeaturesOptions.json';
 let outputOptions;
 
