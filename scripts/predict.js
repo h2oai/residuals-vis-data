@@ -40,7 +40,7 @@ function predict(options) {
         outputOptions.deviancesFrames[model] =  json.deviances_frame.name;
 
         if (modelIDs.length > 1) {
-          // if there are more models, predict again
+          // there are more models, so predict again
           let remainingModelIDs = modelIDs.slice(1,modelIDs.length);
           const newOptions = {
             server: options.server,
