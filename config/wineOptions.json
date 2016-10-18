@@ -1,0 +1,31 @@
+{
+  "server": "http://172.16.2.99",
+  "port": "54321",
+  "validationFrame": "validation_wine_0.25",
+  "radiusScale": "0.8",
+  "modelIDs": [
+    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c",
+    "drf-dda32239-de93-4faf-9764-1c1ae204bd88",
+    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125",
+    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9"
+  ],
+  "ignoredColumns": [],
+  "predictionFrames": {
+    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "predictions_94a5_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25",
+    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "predictions_9ead_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25",
+    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "predictions_969d_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25",
+    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "predictions_805f_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25"
+  },
+  "deviancesFrames": {
+    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "deviances_a722_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25",
+    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "deviances_94d2_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25",
+    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "deviances_86d2_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25",
+    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "deviances_9e66_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25"
+  },
+  "combinedFrames": {
+    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "combined-combined-predictions_94a5_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25-deviances_a722_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25-validation_wine_0.25",
+    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "combined-combined-predictions_9ead_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25-deviances_94d2_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25-validation_wine_0.25",
+    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "combined-combined-predictions_969d_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25-deviances_86d2_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25-validation_wine_0.25",
+    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "combined-combined-predictions_805f_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-deviances_9e66_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-validation_wine_0.25"
+  }
+}
