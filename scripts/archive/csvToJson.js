@@ -11,13 +11,20 @@ const grupoBimboConfig = {
   fileSuffix: '-aggregated-0-05'
  }
 
-const config = grupoBimboConfig;
+const wineConfig = {
+  project: 'wine',
+  filePrefix: '',
+  fileStem: 'glm',
+  fileSuffix: '-wine-predictions-deviances'
+ }
+
+const config = wineConfig;
 const project = config.project;
 const filePrefix = config.filePrefix;
 const fileSuffix = config.fileSuffix;
 const fileStem = config.fileStem;
 
-const outputPath = `${project}/output`;
+const outputPath = `../../local-data/${project}`;
 const csvfile1 = `${outputPath}/${filePrefix}${fileStem}${fileSuffix}.csv`;
 const data = d3.csv.parse(fs.readFileSync(csvfile1, 'utf8'));
 
