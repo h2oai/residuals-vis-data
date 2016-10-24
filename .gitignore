@@ -2,3 +2,5 @@ node_modules/
 local-data/
 local-models/
 .DS_Store
+*.sublime-project
+*.sublime-workspace

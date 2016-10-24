@@ -1,6 +1,6 @@
 {
-  "server": "http://172.16.2.141",
-  "port": "54321",
+  "server": "http://192.168.0.106",
+  "port": "55555",
   "validationFrame": "Bimbo_valid_processed.hex",
   "radiusScale": "0.8",
   "modelIDs": [

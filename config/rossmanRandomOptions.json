@@ -1,0 +1,70 @@
+{
+  "server": "http://192.168.0.106",
+  "port": "55555",
+  "validationFrame": "rossman-validation-random-frame_0.250",
+  "radiusScale": "0.8",
+  "modelIDs": [
+    "glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc",
+    "drf-156fbad7-316b-41f6-a364-a73d76843e83",
+    "gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761"
+  ],
+  "ignoredColumns": [
+    "Store",
+    "DayOfWeek",
+    "Date",
+    "Sales",
+    "Customers",
+    "Open",
+    "Promo",
+    "StateHoliday",
+    "SchoolHoliday",
+    "StoreType",
+    "Assortment",
+    "CompetitionDistance",
+    "CompetitionOpenSinceMonth",
+    "CompetitionOpenSinceYear",
+    "Promo2",
+    "Promo2SinceWeek",
+    "Promo2SinceYear",
+    "PromoInterval"
+  ],
+  "predictionFrames": {
+    "glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc": "predictions_9059_glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc_on_rossman-validation-random-frame_0.250",
+    "drf-156fbad7-316b-41f6-a364-a73d76843e83": "predictions_a218_drf-156fbad7-316b-41f6-a364-a73d76843e83_on_rossman-validation-random-frame_0.250",
+    "gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761": "predictions_9ea4_gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761_on_rossman-validation-random-frame_0.250"
+  },
+  "deviancesFrames": {
+    "glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc": "deviances_92df_glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc_on_rossman-validation-random-frame_0.250",
+    "drf-156fbad7-316b-41f6-a364-a73d76843e83": "deviances_b7c1_drf-156fbad7-316b-41f6-a364-a73d76843e83_on_rossman-validation-random-frame_0.250",
+    "gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761": "deviances_8014_gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761_on_rossman-validation-random-frame_0.250"
+  },
+  "modelMetrics": {
+    "glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc": {
+      "mse": 8885209.114956208,
+      "rmse": 2980.806789269678,
+      "nobs": 254452,
+      "r2": 0.39945626375100796,
+      "mean_residual_deviance": 8885209.114956208,
+      "mae": 2252.4573607055245,
+      "rmsle": 3.4550076310876956
+    },
+    "drf-156fbad7-316b-41f6-a364-a73d76843e83": {
+      "mse": 345143.14839217113,
+      "rmse": 587.4888495896506,
+      "nobs": 254452,
+      "r2": 0.9766720677932861,
+      "mean_residual_deviance": 345143.14839217113,
+      "mae": 362.5340157190141,
+      "rmsle": 0.7161371308808844
+    },
+    "gbm-b09aefc4-644d-45d3-9dd8-78c6f340f761": {
+      "mse": 789329.4384026648,
+      "rmse": 888.4421412802664,
+      "nobs": 254452,
+      "r2": 0.9466498937800192,
+      "mean_residual_deviance": 789329.4384026648,
+      "mae": 604.2864521187673,
+      "rmsle": "NaN"
+    }
+  }
+}
