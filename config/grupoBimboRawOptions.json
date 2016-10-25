@@ -1,0 +1,68 @@
+{
+  "server": "http://172.16.2.141",
+  "port": "54321",
+  "radiusScale": "0.8",
+  "validationFrame": "gb-raw-valid-frame_0.250",
+  "modelIDs": [
+    "gbm-449bad18-74ad-488c-98b7-0cd8206af6d5",
+    "drf-0fa4ae30-daa2-439a-8d0c-368cc321470b",
+    "glm-2820ecdd-6032-422a-800f-ad51bfaab475"
+  ],
+  "ignoredColumns": [
+    "Agencia_ID",
+    "Producto_ID",
+    "Cliente_ID",
+    "Semana",
+    "Canal_ID",
+    "Ruta_SAK",
+    "Venta_uni_hoy",
+    "Venta_hoy",
+    "Dev_uni_proxima",
+    "Dev_proxima",
+    "Demanda_uni_equil",
+    "NombreCliente",
+    "NombreProducto",
+    "Town",
+    "State",
+    "Demanda_uni_equil0"
+  ],
+  "predictionFrames": {
+    "gbm-449bad18-74ad-488c-98b7-0cd8206af6d5": "predictions_99c4_gbm-449bad18-74ad-488c-98b7-0cd8206af6d5_on_gb-raw-valid-frame_0.250",
+    "drf-0fa4ae30-daa2-439a-8d0c-368cc321470b": "predictions_b718_drf-0fa4ae30-daa2-439a-8d0c-368cc321470b_on_gb-raw-valid-frame_0.250",
+    "glm-2820ecdd-6032-422a-800f-ad51bfaab475": "predictions_a94e_glm-2820ecdd-6032-422a-800f-ad51bfaab475_on_gb-raw-valid-frame_0.250"
+  },
+  "deviancesFrames": {
+    "gbm-449bad18-74ad-488c-98b7-0cd8206af6d5": "deviances_b7ff_gbm-449bad18-74ad-488c-98b7-0cd8206af6d5_on_gb-raw-valid-frame_0.250",
+    "drf-0fa4ae30-daa2-439a-8d0c-368cc321470b": "deviances_a7c6_drf-0fa4ae30-daa2-439a-8d0c-368cc321470b_on_gb-raw-valid-frame_0.250",
+    "glm-2820ecdd-6032-422a-800f-ad51bfaab475": "deviances_955a_glm-2820ecdd-6032-422a-800f-ad51bfaab475_on_gb-raw-valid-frame_0.250"
+  },
+  "modelMetrics": {
+    "gbm-449bad18-74ad-488c-98b7-0cd8206af6d5": {
+      "mse": 0.21282195427197703,
+      "rmse": 0.46132629913324585,
+      "nobs": 18545035,
+      "r2": 0.9995463156981645,
+      "mean_residual_deviance": 0.21282195427197703,
+      "mae": 0.09580981571889184,
+      "rmsle": "NaN"
+    },
+    "drf-0fa4ae30-daa2-439a-8d0c-368cc321470b": {
+      "mse": 1.474409126091382,
+      "rmse": 1.2142524968437916,
+      "nobs": 18545035,
+      "r2": 0.9968569207191108,
+      "mean_residual_deviance": 1.474409126091382,
+      "mae": 0.14428980459266896,
+      "rmsle": 0.0662320642101809
+    },
+    "glm-2820ecdd-6032-422a-800f-ad51bfaab475": {
+      "mse": 1.8055603784119154,
+      "rmse": 1.3437114193203523,
+      "nobs": 18545035,
+      "r2": 0.996150987324105,
+      "mean_residual_deviance": 1.8055603784119154,
+      "mae": 0.2870272572391347,
+      "rmsle": "NaN"
+    }
+  }
+}

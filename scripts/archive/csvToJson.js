@@ -29,11 +29,11 @@ const grupoBimboEfConfig = {
 const wineConfig = {
   project: 'wine',
   filePrefix: '',
-  fileStem: 'glm',
-  fileSuffix: '-wine-predictions-deviances'
+  fileStem: 'wine-drf',
+  fileSuffix: '-combined-predictions-deviances'
  }
 
-const config = grupoBimboEfConfig;
+const config = wineConfig;
 
 const project = config.project;
 const filePrefix = config.filePrefix;

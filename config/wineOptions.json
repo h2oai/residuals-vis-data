@@ -1,31 +1,69 @@
 {
-  "server": "http://172.16.2.99",
+  "server": "http://172.16.2.141",
   "port": "54321",
-  "validationFrame": "validation_wine_0.25",
-  "radiusScale": "0.8",
+  "validationFrame": "wine-valid-frame_0.250",
   "modelIDs": [
-    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c",
-    "drf-dda32239-de93-4faf-9764-1c1ae204bd88",
-    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125",
-    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9"
+    "deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892",
+    "drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416",
+    "gbm-f9e52186-db83-4d16-a594-fe2d3d957184",
+    "glm-f9109a4a-5373-4ecd-af21-0188505c278f"
   ],
+  "radiusScale": "0.8",
   "ignoredColumns": [],
   "predictionFrames": {
-    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "predictions_94a5_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25",
-    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "predictions_9ead_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25",
-    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "predictions_969d_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25",
-    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "predictions_805f_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25"
+    "deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892": "predictions_a2a1_deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892_on_wine-valid-frame_0.250",
+    "drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416": "predictions_b580_drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416_on_wine-valid-frame_0.250",
+    "gbm-f9e52186-db83-4d16-a594-fe2d3d957184": "predictions_a5f4_gbm-f9e52186-db83-4d16-a594-fe2d3d957184_on_wine-valid-frame_0.250",
+    "glm-f9109a4a-5373-4ecd-af21-0188505c278f": "predictions_ac60_glm-f9109a4a-5373-4ecd-af21-0188505c278f_on_wine-valid-frame_0.250"
   },
   "deviancesFrames": {
-    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "deviances_a722_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25",
-    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "deviances_94d2_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25",
-    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "deviances_86d2_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25",
-    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "deviances_9e66_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25"
+    "deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892": "deviances_b35e_deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892_on_wine-valid-frame_0.250",
+    "drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416": "deviances_b567_drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416_on_wine-valid-frame_0.250",
+    "gbm-f9e52186-db83-4d16-a594-fe2d3d957184": "deviances_b3ff_gbm-f9e52186-db83-4d16-a594-fe2d3d957184_on_wine-valid-frame_0.250",
+    "glm-f9109a4a-5373-4ecd-af21-0188505c278f": "deviances_951e_glm-f9109a4a-5373-4ecd-af21-0188505c278f_on_wine-valid-frame_0.250"
+  },
+  "modelMetrics": {
+    "deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892": {
+      "mse": 0.483164207191617,
+      "rmse": 0.695100141844049,
+      "nobs": 1672,
+      "r2": 0.4093913455456957,
+      "mean_residual_deviance": 0.483164207191617,
+      "mae": 0.5414414154729464,
+      "rmsle": 0.10422435160601286
+    },
+    "drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416": {
+      "mse": 0.38742471822295227,
+      "rmse": 0.6224345091838597,
+      "nobs": 1672,
+      "r2": 0.5264210632199209,
+      "mean_residual_deviance": 0.38742471822295227,
+      "mae": 0.4469004780253722,
+      "rmsle": 0.09525256046951894
+    },
+    "gbm-f9e52186-db83-4d16-a594-fe2d3d957184": {
+      "mse": 0.4538429087495994,
+      "rmse": 0.673678639077713,
+      "nobs": 1672,
+      "r2": 0.4452330166834445,
+      "mean_residual_deviance": 0.4538429087495994,
+      "mae": 0.52117533920514,
+      "rmsle": 0.10205624077961499
+    },
+    "glm-f9109a4a-5373-4ecd-af21-0188505c278f": {
+      "mse": 0.5559913883311636,
+      "rmse": 0.745648300696222,
+      "nobs": 1672,
+      "r2": 0.3203690984083589,
+      "mean_residual_deviance": 0.5559913883311636,
+      "mae": 0.5828780753588723,
+      "rmsle": 0.11200531733347978
+    }
   },
   "combinedFrames": {
-    "deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c": "combined-combined-predictions_94a5_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25-deviances_a722_deeplearning-c4b5e005-7535-4e2b-ab33-664960e4e29c_on_validation_wine_0.25-validation_wine_0.25",
-    "drf-dda32239-de93-4faf-9764-1c1ae204bd88": "combined-combined-predictions_9ead_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25-deviances_94d2_drf-dda32239-de93-4faf-9764-1c1ae204bd88_on_validation_wine_0.25-validation_wine_0.25",
-    "gbm-d40d18ff-7dd1-4340-8385-e792cce28125": "combined-combined-predictions_969d_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25-deviances_86d2_gbm-d40d18ff-7dd1-4340-8385-e792cce28125_on_validation_wine_0.25-validation_wine_0.25",
-    "glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9": "combined-combined-predictions_805f_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-deviances_9e66_glm-fc2be9a3-5ea1-48e0-a80d-3bb85a9f73f9_on_validation_wine_0.25-validation_wine_0.25"
+    "deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892": "combined-combined-predictions_a2a1_deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892_on_wine-valid-frame_0.250-deviances_b35e_deeplearning-b8307bd3-16b8-4cc8-aaf4-55fdff355892_on_wine-valid-frame_0.250-wine-valid-frame_0.250",
+    "drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416": "combined-combined-predictions_b580_drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416_on_wine-valid-frame_0.250-deviances_b567_drf-60f5471f-4bfa-43c9-a6f6-d94e173a6416_on_wine-valid-frame_0.250-wine-valid-frame_0.250",
+    "gbm-f9e52186-db83-4d16-a594-fe2d3d957184": "combined-combined-predictions_a5f4_gbm-f9e52186-db83-4d16-a594-fe2d3d957184_on_wine-valid-frame_0.250-deviances_b3ff_gbm-f9e52186-db83-4d16-a594-fe2d3d957184_on_wine-valid-frame_0.250-wine-valid-frame_0.250",
+    "glm-f9109a4a-5373-4ecd-af21-0188505c278f": "combined-combined-predictions_ac60_glm-f9109a4a-5373-4ecd-af21-0188505c278f_on_wine-valid-frame_0.250-deviances_951e_glm-f9109a4a-5373-4ecd-af21-0188505c278f_on_wine-valid-frame_0.250-wine-valid-frame_0.250"
   }
 }
