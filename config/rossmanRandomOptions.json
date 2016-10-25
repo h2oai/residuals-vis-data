@@ -2,7 +2,7 @@
   "server": "http://192.168.0.106",
   "port": "55555",
   "validationFrame": "rossman-validation2-random-frame_0.250",
-  "radiusScale": "0.05",
+  "radiusScale": "0.3",
   "modelIDs": [
     "glm-8fc0a4a9-5d25-48aa-9b9b-4ed334ead5fc",
     "drf-156fbad7-316b-41f6-a364-a73d76843e83",

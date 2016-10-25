@@ -3,7 +3,7 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const configFile = 'rossmanRandomOptions.json';
+const configFile = 'grupoBimboDmitryFeaturesOptions.json';
 let outputOptions;
 
 const filePath = `../config/${configFile}`;

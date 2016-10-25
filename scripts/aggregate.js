@@ -3,7 +3,7 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const configFile = 'rossmanRandomOptions.json';
+const configFile = 'grupoBimboDmitryFeaturesOptions.json';
 let outputOptions;
 
 const filePath = `../config/${configFile}`;
@@ -19,7 +19,7 @@ function aggregate(options) {
   const server = options.server;
   const port = options.port;
   const modelIDs = options.modelIDs;
-  const currentModel = modelIDs[0]
+  const currentModel = modelIDs[4]
   const model_id = `aggregator-${currentModel}`;
   const training_frame = options.combinedFrames[currentModel];
   console.log('training_frame to be aggregated', training_frame);

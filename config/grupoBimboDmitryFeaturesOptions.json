@@ -1,6 +1,6 @@
 {
-  "server": "http://192.168.0.106",
-  "port": "55555",
+  "server": "http://172.16.2.141",
+  "port": "54321",
   "validationFrame": "Bimbo_valid_processed.hex",
   "radiusScale": "0.8",
   "modelIDs": [
@@ -64,24 +64,71 @@
     "target0"
   ],
   "predictionFrames": {
-    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "predictions_8119_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex",
-    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "predictions_b8eb_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex",
-    "gbm-6453814e-3bfb-4764-b409-b29787447183": "predictions_80a8_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex",
-    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "predictions_b8e5_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex",
-    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "predictions_bdc2_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex"
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "predictions_8862_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "predictions_af1d_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": "predictions_bf80_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex",
+    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "predictions_b000_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex",
+    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "predictions_afab_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex"
   },
   "deviancesFrames": {
-    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "deviances_9010_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex",
-    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "deviances_991b_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex",
-    "gbm-6453814e-3bfb-4764-b409-b29787447183": "deviances_bcf1_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex",
-    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "deviances_a15e_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex",
-    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "deviances_b202_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex"
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "deviances_b87c_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "deviances_a8df_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": "deviances_8858_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex",
+    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "deviances_9dc4_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex",
+    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "deviances_8593_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex"
   },
   "combinedFrames": {
-    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "combined-combined-predictions_8119_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex-deviances_9010_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
-    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "combined-combined-predictions_b8eb_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex-deviances_991b_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
-    "gbm-6453814e-3bfb-4764-b409-b29787447183": "combined-combined-predictions_80a8_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex-deviances_bcf1_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
-    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "combined-combined-predictions_b8e5_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex-deviances_a15e_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
-    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "combined-combined-predictions_bdc2_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex-deviances_b202_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex"
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": "combined-combined-predictions_8862_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex-deviances_b87c_glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": "combined-combined-predictions_af1d_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex-deviances_a8df_drf-c70bb027-a911-4f67-a754-bb25c31f7ae8_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": "combined-combined-predictions_bf80_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex-deviances_8858_gbm-6453814e-3bfb-4764-b409-b29787447183_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
+    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": "combined-combined-predictions_b000_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex-deviances_9dc4_gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex",
+    "gbm-5933fc16-fb84-4d92-9859-831f62244660": "combined-combined-predictions_afab_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex-deviances_8593_gbm-5933fc16-fb84-4d92-9859-831f62244660_on_Bimbo_valid_processed.hex-Bimbo_valid_processed.hex"
+  },
+  "modelMetrics": {
+    "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5": {
+      "mse": 0.26584327723093365,
+      "rmse": 0.5155999197351893,
+      "nobs": 10408713,
+      "r2": 0.6224818152311185,
+      "mean_residual_deviance": 0.26584327723093365,
+      "mae": 0.38731935321289307,
+      "rmsle": "NaN"
+    },
+    "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8": {
+      "mse": 0.21713278145155354,
+      "rmse": 0.46597508672841464,
+      "nobs": 10408713,
+      "r2": 0.691654517799969,
+      "mean_residual_deviance": 0.21713278145155354,
+      "mae": 0.3470306543644669,
+      "rmsle": 0.19830779287304584
+    },
+    "gbm-6453814e-3bfb-4764-b409-b29787447183": {
+      "mse": 0.23231965263375282,
+      "rmse": 0.48199549026287875,
+      "nobs": 10408713,
+      "r2": 0.6700879764123444,
+      "mean_residual_deviance": 0.23231965263375282,
+      "mae": 0.3602181217699741,
+      "rmsle": 0.20343882641566183
+    },
+    "gbm-cfcd9d90-108b-42f4-bd19-90de6e6fafd8": {
+      "mse": 0.2143045828973544,
+      "rmse": 0.4629304298675498,
+      "nobs": 10408713,
+      "r2": 0.695670780296687,
+      "mean_residual_deviance": 0.2143045828973544,
+      "mae": 0.34440932681571196,
+      "rmsle": 0.19703256143820702
+    },
+    "gbm-5933fc16-fb84-4d92-9859-831f62244660": {
+      "mse": 0.2143107595884188,
+      "rmse": 0.46293710111463177,
+      "nobs": 10408713,
+      "r2": 0.6956620089137024,
+      "mean_residual_deviance": 0.2143107595884188,
+      "mae": 0.34441799938867546,
+      "rmsle": 0.1970374305609836
+    }
   }
 }
