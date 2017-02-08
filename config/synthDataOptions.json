@@ -1,0 +1,10 @@
+{
+  "server": "http://localhost",
+  "port": "54321",
+  "radiusScale": "0.8",
+  "frame": "synth-frame",
+  "ignoredColumns": [
+    "C2",
+    "C4"
+  ]
+}

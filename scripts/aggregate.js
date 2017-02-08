@@ -3,7 +3,7 @@ const jsonfile = require('jsonfile');
 const fs = require('fs');
 const _ = require('lodash');
 
-const configFile = 'grupoBimboDmitryFeaturesOptionsSmall.json'
+const configFile = 'synthDataOptions.json'
 let outputOptions;
 
 const filePath = `../config/${configFile}`;
@@ -18,10 +18,8 @@ function aggregate(options) {
   console.log('aggregate was called');
   const server = options.server;
   const port = options.port;
-  const modelIDs = options.modelIDs;
-  const currentModel = modelIDs[4]
-  const model_id = `aggregator-${currentModel}`;
-  const training_frame = options.combinedFrames[currentModel];
+  const model_id = `aggregator-on-${options.frame}`;
+  const training_frame = options.frame;
   console.log('training_frame to be aggregated', training_frame);
   const ignore_const_cols = 'true';
   const radius_scale = options.radiusScale; // '0.6'; // '0.05'; // '0.005';
@@ -55,26 +53,14 @@ function aggregate(options) {
     .then(function(res) {
         return res.json();
     }).then(function(json) {
-        console.log(json);
-        // if (options.modelIDs.length > 1) {
-        //   options.modelIDs = modelIDs.slice(1, modelIDs.length);
-        //   // recursion!
-        //   aggregate(options);
-        // } else {
-        //   // there are no more frames to aggregate 
-        //   // so now,
-        //   // write out the config
-        //   // with the aggregated frameIDs for each model
-        //   // 
-        //   // this will overwrite our old config file
-        //   // that is ok 😀
-        //   // TODO: write out the frameIDs for the 
-        //   // new aggregated frames
-        // }
+        // console.log(json);
+
+        // get the rowCount for the new aggregated frame
+
+        // if the rowCount is within the desired range,
+        // stop and log out the modelID and output frameID
+
+        // if the rowCount is not within the desired range,
+        // adjust the radiusScale and train another aggregator model
     });
 }
-
-// example
-// aggregate(grupoBimboDmitryFeaturesOptions, grupoBimboDmitryFeaturesOptions.combinedFrames.glm);
-// aggregate(grupoBimboDmitryFeaturesOptions, grupoBimboDmitryFeaturesOptions.combinedFrames.drf);
-// aggregate(grupoBimboDmitryFeaturesOptions, grupoBimboDmitryFeaturesOptions.combinedFrames.gbm);
