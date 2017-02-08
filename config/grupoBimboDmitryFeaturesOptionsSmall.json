@@ -2,7 +2,7 @@
   "server": "http://172.16.2.141",
   "port": "54321",
   "validationFrame": "Bimbo_valid_processed.hex",
-  "radiusScale": "0.8",
+  "radiusScale": "2",
   "modelIDs": [
     "glm-81e8729d-e7a5-4b36-ae26-c6c55a2d94c5",
     "drf-c70bb027-a911-4f67-a754-bb25c31f7ae8",
