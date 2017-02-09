@@ -1,0 +1,343 @@
+{
+  "__meta": {
+    "schema_version": 99,
+    "schema_name": "AggregatorV99",
+    "schema_type": "Aggregator"
+  },
+  "_exclude_fields": null,
+  "job": {
+    "__meta": {
+      "schema_version": 3,
+      "schema_name": "JobV3",
+      "schema_type": "Job"
+    },
+    "key": {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "JobKeyV3",
+        "schema_type": "Key<Job>"
+      },
+      "name": "$0301c0a82b4732d4ffffffff$_b5129a146e745ba885febce8fe924aa9",
+      "type": "Key<Job>",
+      "URL": "/3/Jobs/$0301c0a82b4732d4ffffffff$_b5129a146e745ba885febce8fe924aa9"
+    },
+    "description": "Aggregator",
+    "status": "RUNNING",
+    "progress": 0,
+    "progress_msg": null,
+    "start_time": 1486662796884,
+    "msec": 0,
+    "dest": {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelKeyV3",
+        "schema_type": "Key<Model>"
+      },
+      "name": "aggregator-on-synth-frame",
+      "type": "Key<Model>",
+      "URL": "/3/Models/aggregator-on-synth-frame"
+    },
+    "warnings": null,
+    "exception": null,
+    "stacktrace": null,
+    "ready_for_view": true
+  },
+  "algo": "aggregator",
+  "algo_full_name": "Aggregator",
+  "can_build": [
+    "Clustering"
+  ],
+  "visibility": "Stable",
+  "supervised": false,
+  "messages": [
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "keep_cross_validation_predictions",
+      "message": "Only for cross-validation."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "keep_cross_validation_fold_assignment",
+      "message": "Only for cross-validation."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "fold_assignment",
+      "message": "Only for cross-validation."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "tweedie_power",
+      "message": "Only for Tweedie Distribution."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "response_column",
+      "message": "Ignored for unsupervised methods."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "balance_classes",
+      "message": "Ignored for unsupervised methods."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "class_sampling_factors",
+      "message": "Ignored for unsupervised methods."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "max_after_balance_size",
+      "message": "Ignored for unsupervised methods."
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ValidationMessageV3",
+        "schema_type": "ValidationMessage"
+      },
+      "message_type": "TRACE",
+      "field_name": "max_confusion_matrix_size",
+      "message": "Ignored for unsupervised methods."
+    }
+  ],
+  "error_count": 0,
+  "parameters": [
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "model_id",
+      "label": "model_id",
+      "help": "Destination id for this model; auto-generated if not specified.",
+      "required": false,
+      "type": "Key<Model>",
+      "default_value": null,
+      "actual_value": {
+        "__meta": {
+          "schema_version": 3,
+          "schema_name": "ModelKeyV3",
+          "schema_type": "Key<Model>"
+        },
+        "name": "aggregator-on-synth-frame",
+        "type": "Key<Model>",
+        "URL": "/3/Models/aggregator-on-synth-frame"
+      },
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": false
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "training_frame",
+      "label": "training_frame",
+      "help": "Id of the training data frame (Not required, to allow initial validation of model parameters).",
+      "required": false,
+      "type": "Key<Frame>",
+      "default_value": null,
+      "actual_value": {
+        "__meta": {
+          "schema_version": 3,
+          "schema_name": "FrameKeyV3",
+          "schema_type": "Key<Frame>"
+        },
+        "name": "synth-frame",
+        "type": "Key<Frame>",
+        "URL": "/3/Frames/synth-frame"
+      },
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": false
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "response_column",
+      "label": "response_column",
+      "help": "Response variable column.",
+      "required": false,
+      "type": "VecSpecifier",
+      "default_value": null,
+      "actual_value": null,
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [
+        "training_frame",
+        "validation_frame"
+      ],
+      "is_mutually_exclusive_with": [
+        "ignored_columns"
+      ],
+      "gridable": true
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "ignored_columns",
+      "label": "ignored_columns",
+      "help": "Names of columns to ignore for training.",
+      "required": false,
+      "type": "string[]",
+      "default_value": null,
+      "actual_value": [
+        "C2",
+        "C4"
+      ],
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [
+        "training_frame",
+        "validation_frame"
+      ],
+      "is_mutually_exclusive_with": [
+        "response_column"
+      ],
+      "gridable": false
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "ignore_const_cols",
+      "label": "ignore_const_cols",
+      "help": "Ignore constant columns.",
+      "required": false,
+      "type": "boolean",
+      "default_value": true,
+      "actual_value": true,
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": false
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "radius_scale",
+      "label": "radius_scale",
+      "help": "Radius scaling",
+      "required": false,
+      "type": "double",
+      "default_value": 1,
+      "actual_value": 0.8,
+      "level": "critical",
+      "values": [],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": true
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "transform",
+      "label": "transform",
+      "help": "Transformation of training data",
+      "required": false,
+      "type": "enum",
+      "default_value": "NORMALIZE",
+      "actual_value": "NORMALIZE",
+      "level": "expert",
+      "values": [
+        "NONE",
+        "STANDARDIZE",
+        "NORMALIZE",
+        "DEMEAN",
+        "DESCALE"
+      ],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": true
+    },
+    {
+      "__meta": {
+        "schema_version": 3,
+        "schema_name": "ModelParameterSchemaV3",
+        "schema_type": "Iced"
+      },
+      "name": "categorical_encoding",
+      "label": "categorical_encoding",
+      "help": "Encoding scheme for categorical features",
+      "required": false,
+      "type": "enum",
+      "default_value": "AUTO",
+      "actual_value": "AUTO",
+      "level": "secondary",
+      "values": [
+        "AUTO",
+        "Enum",
+        "OneHotInternal",
+        "OneHotExplicit",
+        "Binary",
+        "Eigen"
+      ],
+      "is_member_of_frames": [],
+      "is_mutually_exclusive_with": [],
+      "gridable": true
+    }
+  ]
+}

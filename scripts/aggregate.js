@@ -25,6 +25,7 @@ function aggregate(options) {
   const radius_scale = options.radiusScale; // '0.6'; // '0.05'; // '0.005';
   const categorical_encoding = 'AUTO';
   const transform = 'NORMALIZE';
+  
 
   // an array
   const ignoredColumns = options.ignoredColumns;
@@ -51,11 +52,22 @@ function aggregate(options) {
   // 
   fetch(`${server}:${port}/99/ModelBuilders/aggregator`, fetchOptions)
     .then(function(res) {
+        // a response that tells us that a job
+        // to train an Aggregator model has started
         return res.json();
     }).then(function(json) {
+        // write the response to a file 
+        // so that we can inspect it
+        const outputJsonObj = json;
+        const outputFile = `../logs/aggregator-log.json`;
+        jsonfile.writeFile(outputFile, outputJsonObj, {spaces: 2}, function(err){
+          console.log(err)
+        })
+
         // console.log(json);
 
         // get the rowCount for the new aggregated frame
+
 
         // if the rowCount is within the desired range,
         // stop and log out the modelID and output frameID
