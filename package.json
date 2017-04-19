@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@micahstubbs <micah.stubbs@gmail.com> (https://twitter.com/micahstubbs)",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "devDependencies": {
     "csv-write-stream": "^2.0.0",
     "d3": "^3.5.17",
