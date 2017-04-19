@@ -35,7 +35,7 @@ function aggregate(options) {
   let ignored_columns = '[';
   ignoredColumns.forEach((d, i) => {
     ignored_columns += `"${d}"`;
-    if (i < (ignoredColumns.length - 1)) {
+    if (i < (ignoredColumns.length - 1))
       ignored_columns += ',';
     }
   })
