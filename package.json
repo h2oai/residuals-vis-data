@@ -16,6 +16,6 @@
   "dependencies": {
     "form-data": "^2.0.0",
     "jsonfile": "^2.4.0",
-    "node-fetch": "^1.6.1"
+    "node-fetch": "^3.3.2"
   }
 }
